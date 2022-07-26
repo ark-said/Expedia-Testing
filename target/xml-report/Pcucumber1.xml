@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.028">
+    <testcase classname="US1011 Expedia Sign In Menu Avability" name="Check if it the favorites button in the sign in menu works" time="26.748">
+        <system-out>
+            <![CDATA[Given The user opens the Expedia website....................................passed
+And The user sees Expedia's home page is visible............................passed
+And The user clicks on the flights..........................................passed
+And The user clicks on the Sign In button...................................passed
+And The user clicks on the list of favorites................................passed
+And The user checks if there is a heart icon................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
