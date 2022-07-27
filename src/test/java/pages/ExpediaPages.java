@@ -114,4 +114,52 @@ public WebElement SigninMenuFavorites;
 
     @FindBy (xpath = "//*[@id=\"uitk-tabs-container\"]/div/div[1]/div/div/div/div/div/div/div[1]")
     public WebElement AllSavedItems;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[5]/a")
+    public WebElement SigninMenuExpediaRewards;
+
+    @FindBy (xpath = "//*[@id=\"root\"]/div/div[1]/div[2]/div/div[1]")
+    public WebElement ExpediaRewardsEarn;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[6]/a")
+    public WebElement ExpediaSigninMenuFeedbackButton;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[3]/a")
+    public WebElement ExpediaSigninMenuSignUp;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[7]/div/p")
+    public WebElement ExpediaSignUpCreateAnAccountConditions;
+
+
+    @FindBy (xpath = "//*[@id=\"headerFeedback\"]/div[5]/button/span[1]")
+    public WebElement ExpediFeedBackExit;
+
+
+    @FindBy (xpath = "//*[@id=\"signupFormEmailInput\"]")
+    public WebElement SignupEmailBox;
+
+    @FindBy (xpath = "//*[@id=\"signupFormFirstNameInput\"]")
+    public WebElement SignupFirstNameBox;
+
+    @FindBy (xpath = "//*[@id=\"signupFormLastNameInput\"]")
+    public WebElement SignupLastNameBox;
+
+    @FindBy (xpath = "//*[@id=\"signupFormPasswordInput\"]")
+    public WebElement SignupPasswordBox;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div")
+    public WebElement SignupKeepMeSignInBox;
+
+    @FindBy (xpath = "//*[@id=\"signupFormEmailInput-error\"]")
+    public WebElement SignupEmailBoxError;
+
+    @FindBy (xpath = "//*[@id=\"signupFormFirstNameInput-error\"]")
+    public WebElement SignupFirstNameBoxError;
+
+    @FindBy (xpath = "//*[@id=\"signupFormLastNameInput-error\"]")
+    public WebElement SignupLastNameBoxError;
+
+    @FindBy (xpath = "//*[@id=\"signupFormPasswordInput-error\"]")
+    public WebElement SignupPasswordBoxError;
+
 }

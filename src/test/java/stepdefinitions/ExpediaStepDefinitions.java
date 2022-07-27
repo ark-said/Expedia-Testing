@@ -166,4 +166,63 @@ expediaPages.EmailAndPasswordDontMatchText.isDisplayed();
     public void the_user_checks_if_there_is_a_heart_icon() {
         expediaPages.AllSavedItems.isDisplayed();
     }
+
+    @Given("The user clicks on the Expedia Rewards")
+    public void the_user_clicks_on_the_expedia_rewards() {
+      expediaPages.SigninMenuExpediaRewards.click();
+
+    }
+    @Given("The user checks if there is a earn message")
+    public void the_user_checks_if_there_is_a_earn_message() {
+        expediaPages.ExpediaRewardsEarn.isDisplayed();
+
+    }
+
+    @And("The user clicks on the Feedback")
+    public void theUserClicksOnTheFeedback() {
+        expediaPages.ExpediaSigninMenuFeedbackButton.click();
+    }
+
+
+
+    @Given("The user clicks on the Sign Up")
+    public void the_user_clicks_on_the_sign_up() {
+      expediaPages.ExpediaSigninMenuSignUp.click();
+    }
+    @Given("The user checks if there is a Conditions text")
+    public void the_user_checks_if_there_is_a_conditions_text() {
+        expediaPages.ExpediaSignUpCreateAnAccountConditions.isDisplayed();
+    }
+
+    @And("The user checks if there is a Feedback main page")
+    public void theUserChecksIfThereIsAFeedbackMainPage() {
+      //  String actualUrl= Driver.driver.getCurrentUrl();
+      //  String expectedUrl = "https://www.expedia.com/p/support/feedback";
+   //Assert.assertEquals(expectedUrl,actualUrl);
+    }
+
+    @Given("The user opens the Expedia signup page")
+    public void theUserOpensTheExpediaSignupPage() {
+
+        Driver.getDriver().get(ConfigReader.getProperty("expediasignupurl"));
+    }
+
+    @And("The user clicks on all the boxes")
+    public void theUserClicksOnAllTheBoxes() {
+        expediaPages.SignupEmailBox.click();
+        expediaPages.SignupFirstNameBox.click();
+        expediaPages.SignupLastNameBox.click();
+        expediaPages.SignupPasswordBox.click();
+        expediaPages.SignupEmailBox.click();
+
+    }
+
+    @And("The user checks if there are error messages")
+    public void theUserChecksIfThereAreErrorMessages() {
+ expediaPages.SignupEmailBoxError.isDisplayed();
+        expediaPages.SignupFirstNameBoxError.isDisplayed();
+        expediaPages.SignupLastNameBoxError.isDisplayed();
+        expediaPages.SignupPasswordBoxError.isDisplayed();
+
+    }
 }

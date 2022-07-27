@@ -1,4 +1,4 @@
-Feature: US1011 Expedia Sign In Wrong Email Wrong Password
+Feature: US1015 Expedia Sign In Wrong Email Wrong Password
 
   @SignInWrongEmailWrongPassword
   Scenario: Check if it gives an error message when you write wrong email and password

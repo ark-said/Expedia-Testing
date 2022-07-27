@@ -1,4 +1,4 @@
-Feature: US1006 Expedia Multi Way Trip Half Empty Destination Error Check
+Feature: US1009 Expedia Multi Way Trip Half Empty Destination Error Check
 
   @HalfEmptyDestination
   @MultiWayTriHalfpEmptyDestination
