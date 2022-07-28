@@ -225,4 +225,76 @@ expediaPages.EmailAndPasswordDontMatchText.isDisplayed();
         expediaPages.SignupPasswordBoxError.isDisplayed();
 
     }
+
+    @And("The user writes invalid e-mail")
+    public void theUserWritesInvalidEMail() {
+        expediaPages.SignupEmailBox.sendKeys("notvalidmail");
+    }
+
+    @And("The user fills all the other boxes with valid information")
+    public void theUserFillsAllTheOtherBoxesWithValidInformation() {
+        expediaPages.SignupFirstNameBox.sendKeys("Joe");
+        expediaPages.SignupLastNameBox.sendKeys("Miller");
+        expediaPages.SignupPasswordBox.sendKeys("Thisisavalidpassword42+");
+
+    }
+
+    @And("The user checks if there is a Enter a valid email adress error")
+    public void theUserChecksIfThereIsAEnterAValidEmailAdressError() {
+        expediaPages.SignupInvalidEmailError.isDisplayed();
+    }
+
+    @Given("The user fills out all the boxes with valid information")
+    public void the_user_fills_out_all_the_boxes_with_valid_information() {
+        expediaPages.SignupEmailBox.sendKeys("validmail@gmail.com");
+        expediaPages.SignupFirstNameBox.sendKeys("Joe");
+        expediaPages.SignupLastNameBox.sendKeys("Miller");
+        expediaPages.SignupPasswordBox.sendKeys("Thisisavalidpassword42+");
+
+    }
+    @Given("The user checks if the password strength information are visible")
+    public void the_user_checks_if_the_password_strength_information_are_visible() {
+        expediaPages.SignupPasswordStrength.isDisplayed();
+        expediaPages.SignupPasswordWeak.isDisplayed();
+    }
+
+    @And("The user writes various passwords in password box to see if password weakness changes")
+    public void theUserWritesVariousPasswordsInPasswordBoxToSeeIfPasswordWeaknessChanges() {
+        expediaPages.SignupPasswordBox.sendKeys("try");
+        expediaPages.SignupPasswordWeak.isDisplayed();
+
+        expediaPages.SignupPasswordBox.sendKeys("Trythis");
+        expediaPages.SignupPasswordWeak.isDisplayed();
+
+        expediaPages.SignupPasswordBox.sendKeys("Trythispassword414+");
+        expediaPages.SignupPasswordWeak.isDisplayed();
+    }
+
+
+
+    @And("The user doesn't type necessary characters to see the warnings")
+    public void theUserDoesnTTypeNecessaryCharactersToSeeTheWarnings() {
+        expediaPages.SignupPasswordBox.sendKeys("a");
+        expediaPages.SignupPasswordWarningLessThanEight.isDisplayed();
+        expediaPages.SignupPasswordWarningCombine.isDisplayed();
+        expediaPages.SignupPasswordWarningSymbol.isDisplayed();
+    }
+
+    @Given("The user will enter an eight-character password that meets all requirements, but will still be considered Weak")
+    public void the_user_will_enter_an_eight_character_password_that_meets_all_requirements_but_will_still_be_considered_weak() {
+        expediaPages.SignupPasswordBox.sendKeys("Cherly7!");
+        expediaPages.SignupPasswordWeak.isDisplayed();
+        Driver.getDriver().navigate().refresh();
+    }
+    @Given("The user will enter an nine-character password that meets all requirements, it will be considered Strong")
+    public void the_user_will_enter_an_nine_character_password_that_meets_all_requirements_it_will_be_considered_strong() {
+        expediaPages.SignupPasswordBox.sendKeys("Cherly7!y");
+        expediaPages.SignupPasswordStrong.isDisplayed();
+        Driver.getDriver().navigate().refresh();
+    }
+    @Given("The user will enter an eleven-character password that meets all requirements and last two characters must different three before the last one then it will be considered Very Strong")
+    public void the_user_will_enter_an_eleven_character_password_that_meets_all_requirements_and_last_two_characters_must_different_three_before_the_last_one_then_it_will_be_considered_very_strong() {
+        expediaPages.SignupPasswordBox.sendKeys("Cherly7!ypp");
+        expediaPages.SignupPasswordVeryStrong.isDisplayed();
+    }
 }

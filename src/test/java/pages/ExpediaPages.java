@@ -162,4 +162,31 @@ public WebElement SigninMenuFavorites;
     @FindBy (xpath = "//*[@id=\"signupFormPasswordInput-error\"]")
     public WebElement SignupPasswordBoxError;
 
+
+
+    @FindBy (xpath = "//*[@id=\"signupFormEmailInput-error\"]")
+    public WebElement SignupInvalidEmailError;
+
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div[1]/div[1]")
+    public WebElement SignupPasswordStrength;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div[1]/div[2]")
+    public WebElement SignupPasswordWeak;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[1]")
+    public WebElement SignupPasswordWarningLessThanEight;
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[2]")
+    public WebElement SignupPasswordWarningSymbol;
+
+    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[3]")
+    public WebElement SignupPasswordWarningCombine;
+
+
+    @FindBy(xpath = "//*[ text() = ‘Strong’ ]")
+    public WebElement SignupPasswordStrong;
+
+    @FindBy(xpath = "//*[ text() = ‘Very Strong’ ]")
+    public WebElement SignupPasswordVeryStrong;
 }
