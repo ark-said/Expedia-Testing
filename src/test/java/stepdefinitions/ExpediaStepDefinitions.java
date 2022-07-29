@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.ExpediaPages;
 import utilities.ConfigReader;
@@ -296,5 +297,27 @@ expediaPages.EmailAndPasswordDontMatchText.isDisplayed();
     public void the_user_will_enter_an_eleven_character_password_that_meets_all_requirements_and_last_two_characters_must_different_three_before_the_last_one_then_it_will_be_considered_very_strong() {
         expediaPages.SignupPasswordBox.sendKeys("Cherly7!ypp");
         expediaPages.SignupPasswordVeryStrong.isDisplayed();
+    }
+
+    @And("The user will click on the terms and conditions page and will confirm that page exist")
+    public void theUserWillClickOnTheTermsAndConditionsPageAndWillConfirmThatPageExist() {
+   // expediaPages.SignupPageTermsAndConditions.click();
+
+Driver.getDriver().findElement(By.linkText("//a[text()='Terms and Conditions")).click();
+        expediaPages.WebsiteTermsConfirmObject.isDisplayed();
+        
+    }
+
+    @And("The user will click on the privacy page and will confirm that page exist")
+    public void theUserWillClickOnThePrivacyPageAndWillConfirmThatPageExist() {
+//expediaPages.SignupPagePrivacy.click();
+expediaPages.PrivacyPageConfirmObject.isDisplayed();
+
+    }
+
+    @And("The user will click on the reward terms and conditions and will confirm that page exist")
+    public void theUserWillClickOnTheRewardTermsAndConditionsAndWillConfirmThatPageExist() {
+      //  expediaPages.SignupPageRewardTermsAndConditions.click();
+        expediaPages.RewardsTermsAndConditionsConfirmObject.isDisplayed();
     }
 }

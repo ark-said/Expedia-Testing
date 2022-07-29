@@ -189,4 +189,23 @@ public WebElement SigninMenuFavorites;
 
     @FindBy(xpath = "//*[ text() = ‘Very Strong’ ]")
     public WebElement SignupPasswordVeryStrong;
+
+    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[1]")
+    public WebElement SignupPageTermsAndConditions;
+
+    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[2]")
+    public WebElement SignupPagePrivacy;
+
+    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[3]")
+    public WebElement SignupPageRewardTermsAndConditions;
+
+    @FindBy(xpath = "//*[@id=\"editorial-1\"]/div/div/div/div/div/div/div/h5[1]")
+    public WebElement WebsiteTermsConfirmObject;
+
+    @FindBy(xpath = "//*[@id=\"editorial-1\"]/div/div/div/div/div/div/div/h2[1]")
+    public WebElement PrivacyPageConfirmObject;
+
+    @FindBy(xpath = "//*[@id=\"60668133\"]/div/h1")
+    public WebElement RewardsTermsAndConditionsConfirmObject;
+
 }
