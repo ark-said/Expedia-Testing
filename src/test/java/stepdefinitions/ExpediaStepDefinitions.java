@@ -320,4 +320,15 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
       //  expediaPages.SignupPageRewardTermsAndConditions.click();
         expediaPages.RewardsTermsAndConditionsConfirmObject.isDisplayed();
     }
+
+    @Given("The user clicks on the Apple logo")
+    public void the_user_clicks_on_the_apple_logo() {
+
+    }
+
+    @Given("The user confirms apple login page is avaible")
+    public void the_user_confirms_apple_login_page_is_avaible() {
+
+    }
+
 }

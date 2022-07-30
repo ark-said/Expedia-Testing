@@ -208,4 +208,13 @@ public WebElement SigninMenuFavorites;
     @FindBy(xpath = "//*[@id=\"60668133\"]/div/h1")
     public WebElement RewardsTermsAndConditionsConfirmObject;
 
+    @FindBy (xpath = "//*[@id=\"social-auth-provider-apple-web\"]/img")
+    public WebElement SignupPageAppleLogin;
+
+    @FindBy (xpath = "//*[@id=\"social-auth-provider-facebook-web\"]/img")
+    public WebElement SignupPageFacebookLogin;
+
+    @FindBy (xpath = "//*[@id=\"social-auth-provider-google-web\"]/img")
+    public WebElement SignupPageGoogleLogin;
+
 }
