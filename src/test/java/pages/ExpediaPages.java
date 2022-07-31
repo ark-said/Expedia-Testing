@@ -220,4 +220,29 @@ public WebElement SigninMenuFavorites;
     @FindBy (xpath = "//h1[text()=’Use your Apple ID to sign in to Expedia.]")
     public WebElement SignupPageAppleLoginConfirm;
 
+
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div/label")
+    public WebElement SignupPageKeepMeSignedIn;
+
+
+    @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
+    public WebElement SignupPageKeepMeSignedInText;
+
+
+    @FindBy (xpath = "//*[@id=\"signinRedirectLink\"]")
+    public WebElement SignupPageSignInButton;
+
+
+
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[1]/h1")
+    public WebElement SignupPageSignInRedirectConfirmation;
+
+
+
+    @FindBy (xpath = "//*[@id=\"loginFormRememberMeCheck\"]")
+    public WebElement SigninPageKeepSignedInButton;
+
+    @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
+    public WebElement SigninPageKeepSignedInButtonText;
 }

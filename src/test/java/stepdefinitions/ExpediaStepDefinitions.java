@@ -363,5 +363,35 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
     public void theUserConfirmsGoogleLoginPageIsAvaible() {
     }
 
+    @Given("The user clicks on the keep me signed in button")
+    public void the_user_clicks_on_the_keep_me_signed_in_button() {
+expediaPages.SignupPageKeepMeSignedIn.click();
+    }
+    @Given("The user confirms signed in text is visible")
+    public void the_user_confirms_signed_in_text_is_visible() {
+        expediaPages.SignupPageKeepMeSignedInText.isDisplayed();
+    }
+
+    @Given("The user clicks on the sign in button")
+    public void the_user_clicks_on_the_sign_in_button() {
+       expediaPages.SignupPageSignInButton.click();
+
+    }
+    @Given("The user confirms sign in website is visible")
+    public void the_user_confirms_sign_in_website_is_visible() {
+        expediaPages.SignupPageSignInRedirectConfirmation.isDisplayed();
+    }
+    @Given("The user opens the Expedia signin paage")
+    public void the_user_opens_the_expedia_signin_paage() {
+        Driver.getDriver().get(ConfigReader.getProperty("expediasigninurl"));
+    }
+    @Given("The user clicks on the keep me signed in button - Signed In")
+    public void the_user_clicks_on_the_keep_me_signed_in_button_signed_in() {
+expediaPages.SigninPageKeepSignedInButton.click();
+    }
+    @Given("The user confirms signed in text is visible - Signed In")
+    public void the_user_confirms_signed_in_text_is_visible_signed_in() {
+        expediaPages.SigninPageKeepSignedInButtonText.click();
+    }
 
 }
