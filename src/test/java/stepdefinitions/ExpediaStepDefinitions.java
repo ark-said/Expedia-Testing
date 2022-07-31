@@ -311,14 +311,14 @@ Driver.getDriver().findElement(By.linkText("//a[text()='Terms and Conditions")).
 
     @And("The user will click on the privacy page and will confirm that page exist")
     public void theUserWillClickOnThePrivacyPageAndWillConfirmThatPageExist() {
-//expediaPages.SignupPagePrivacy.click();
+expediaPages.SignupPagePrivacy.click();
 expediaPages.PrivacyPageConfirmObject.isDisplayed();
 
     }
 
     @And("The user will click on the reward terms and conditions and will confirm that page exist")
     public void theUserWillClickOnTheRewardTermsAndConditionsAndWillConfirmThatPageExist() {
-      //  expediaPages.SignupPageRewardTermsAndConditions.click();
+       expediaPages.SignupPageRewardTermsAndConditions.click();
         expediaPages.RewardsTermsAndConditionsConfirmObject.isDisplayed();
     }
 
@@ -333,8 +333,8 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
 
     }
 
-    @Given("The user confirms apple login page is avaible")
-    public void the_user_confirms_apple_login_page_is_avaible() {
+    @Given("The user confirms apple login page is available")
+    public void the_user_confirms_apple_login_page_is_Available() {
 
     }
 
@@ -346,8 +346,8 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
     Driver.getDriver().switchTo().newWindow(WindowType.WINDOW);
     }
 
-    @And("The user confirms Facebook login page is avaible")
-    public void theUserConfirmsFacebookLoginPageIsAvaible() {
+    @And("The user confirms Facebook login page is available")
+    public void theUserConfirmsFacebookLoginPageIsAvailable() {
 
 
     }
@@ -359,8 +359,8 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
         Driver.getDriver().switchTo().newWindow(WindowType.WINDOW);
     }
 
-    @And("The user confirms Google login page is avaible")
-    public void theUserConfirmsGoogleLoginPageIsAvaible() {
+    @And("The user confirms Google login page is available")
+    public void theUserConfirmsGoogleLoginPageIsAvailable() {
     }
 
     @Given("The user clicks on the keep me signed in button")
@@ -381,8 +381,8 @@ expediaPages.SignupPageKeepMeSignedIn.click();
     public void the_user_confirms_sign_in_website_is_visible() {
         expediaPages.SignupPageSignInRedirectConfirmation.isDisplayed();
     }
-    @Given("The user opens the Expedia signin paage")
-    public void the_user_opens_the_expedia_signin_paage() {
+    @Given("The user opens the Expedia signin page")
+    public void the_user_opens_the_expedia_signin_page() {
         Driver.getDriver().get(ConfigReader.getProperty("expediasigninurl"));
     }
     @Given("The user clicks on the keep me signed in button - Signed In")
