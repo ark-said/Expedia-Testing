@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import pages.ExpediaPages;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -323,6 +324,12 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
 
     @Given("The user clicks on the Apple logo")
     public void the_user_clicks_on_the_apple_logo() {
+      Driver.getDriver().navigate().refresh();
+        String originalWindow= Driver.driver.getWindowHandle();
+       expediaPages.SignupPageAppleLogin.click();
+     Driver.getDriver().switchTo().newWindow(WindowType.WINDOW);
+//        expediaPages.SignupPageAppleLoginConfirm.isDisplayed();
+
 
     }
 
@@ -330,5 +337,31 @@ expediaPages.PrivacyPageConfirmObject.isDisplayed();
     public void the_user_confirms_apple_login_page_is_avaible() {
 
     }
+
+    @And("The user clicks on the Facebook logo")
+    public void theUserClicksOnTheFacebookLogo() {
+        Driver.getDriver().navigate().refresh();
+        String originalWindow= Driver.driver.getWindowHandle();
+        expediaPages.SignupPageFacebookLogin.click();
+    Driver.getDriver().switchTo().newWindow(WindowType.WINDOW);
+    }
+
+    @And("The user confirms Facebook login page is avaible")
+    public void theUserConfirmsFacebookLoginPageIsAvaible() {
+
+
+    }
+    @And("The user clicks on the Google logo")
+    public void theUserClicksOnTheGoogleLogo() {
+        Driver.getDriver().navigate().refresh();
+        String originalWindow= Driver.driver.getWindowHandle();
+        expediaPages.SignupPageGoogleLogin.click();
+        Driver.getDriver().switchTo().newWindow(WindowType.WINDOW);
+    }
+
+    @And("The user confirms Google login page is avaible")
+    public void theUserConfirmsGoogleLoginPageIsAvaible() {
+    }
+
 
 }

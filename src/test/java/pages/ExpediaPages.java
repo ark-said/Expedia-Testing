@@ -217,4 +217,7 @@ public WebElement SigninMenuFavorites;
     @FindBy (xpath = "//*[@id=\"social-auth-provider-google-web\"]/img")
     public WebElement SignupPageGoogleLogin;
 
+    @FindBy (xpath = "//h1[text()=’Use your Apple ID to sign in to Expedia.]")
+    public WebElement SignupPageAppleLoginConfirm;
+
 }
