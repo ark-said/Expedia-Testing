@@ -247,5 +247,5 @@ public WebElement SigninMenuFavorites;
     public WebElement SigninPageKeepSignedInButtonText;
 
     @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
-    public WebElement SigninPageKeepSignedInButtonText1;
+    public WebElement SigninPageKeepSignedInButtonText11;
 }
