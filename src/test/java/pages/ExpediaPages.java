@@ -31,8 +31,10 @@ public class ExpediaPages {
     @FindBy(xpath = "//span[contains(text(), 'Multi-city')]")
     public WebElement multiCityButton;
 
-   @FindBy (xpath = "//div[@class='uitk-layout-grid-item uitk-layout-grid-item-columnspan uitk-layout-grid-item-columnspan-small-1 uitk-layout-grid-item-columnspan-medium-12 uitk-type-right']")
+   @FindBy (xpath = "//button[normalize-space()='Add another flight']")
     public WebElement addAnotherFlight;
+
+
 
    @FindBy (xpath =" //div[@data-testid='submit-button']")
    public WebElement searchButton;
@@ -43,91 +45,91 @@ public class ExpediaPages {
    @FindBy (xpath = "//*[@id=\"wizard-flight-tab-roundtrip\"]/div[2]/div[1]/div/h3")
     public WebElement errorWhenEmptyInfo;
 
-@FindBy (xpath = "//*[@id=\"wizard-flight-tab-oneway\"]/div[2]/div[1]/div/h3")
+@FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
 public WebElement ErrorWhenEmptyOneWay;
 
-@FindBy (xpath = "//*[@id=\"wizard-flight-tab-multicity\"]/div[2]/div[1]/div/h3")
+@FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
 public WebElement errorWhenEmptyMultiWay;
 
-@FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[1]/div[2]/button")
+@FindBy (xpath = "//button[@aria-label='Leaving from']")
     public WebElement LeavingFromRoundTrip;
 
-@FindBy (xpath = "//*[@id=\"location-field-leg1-origin\"]")
+@FindBy (xpath = "//input[@id='location-field-leg1-origin']")
     public WebElement LeavingFromRoundTripText;
 
 @FindBy (xpath = "//*[@id=\"app-layer-origin-flight\"]/div[2]/div/div[2]/div[1]/ul/li[1]/button")
     public WebElement RoundTripIstanbulAllAirports;
 
-@FindBy (xpath = "//*[@id=\"wizard-flight-tab-roundtrip\"]/div[2]/div[1]/div")
+@FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
     public WebElement RoundTripHalfEmptyError;
 
 @FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[2]/div[2]/ul/li[6]/button")
     public WebElement RoundTripSearchForIstanbul;
 
-@FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[1]/div[2]/button")
+@FindBy (xpath = "//button[@aria-label='Leaving from']")
 public WebElement OneWayLeavingFrom;
 
-@FindBy (xpath = "//*[@id=\"location-field-leg1-origin\"]")
+@FindBy (xpath = "//input[@id='location-field-leg1-origin']")
 public WebElement OneWayLeavingFromText;
 
-@FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[2]/div[2]/ul/li[6]/button/div/span")
+@FindBy (xpath = "//span[contains(text(),'Search for “Istanbul”')]")
 public WebElement OneWayLeavingFromSearchForIstanbul;
 
-@FindBy (xpath = "//*[@id=\"wizard-flight-tab-oneway\"]/div[2]/div[1]/div")
+@FindBy (xpath = "//div[@class='uitk-error-summary']")
     public WebElement OneWayHalfEmptyErrorMessage;
 
-    @FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[1]/div[2]/button")
+    @FindBy (xpath = "//div[@id='location-field-leg1-origin-menu']//button[@aria-label='Leaving from']")
     public WebElement MultiWayLeavingFrom;
 
-    @FindBy (xpath = "//*[@id=\"location-field-leg1-origin\"]")
+    @FindBy (xpath = "//input[@id='location-field-leg1-origin']")
     public WebElement MultiWayLeavingFromText;
 
-    @FindBy (xpath = "//*[@id=\"location-field-leg1-origin-menu\"]/div[2]/div[2]/ul/li[6]/button")
+    @FindBy (xpath = "//span[contains(text(),'Search for “Istanbul”')]")
     public WebElement MultiWayLeavingFromSearchForIstanbul;
 
-    @FindBy (xpath = "//*[@id=\"wizard-flight-tab-multicity\"]/div[2]/div[1]/div")
+    @FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
     public WebElement MultiWayLeavingHalfEmptyErrorMessage;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/button/div")
+    @FindBy (xpath = "//div[contains(text(),'Sign in')]")
     public WebElement MainScreenSignInButton;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[2]/a")
+    @FindBy (xpath = "//a[@class='uitk-button uitk-button-medium uitk-button-fullWidth uitk-button-has-text uitk-button-primary']")
     public WebElement SignInInsideTheSignIn;
 
-    @FindBy (xpath = "//*[@id=\"loginFormEmailInput\"]")
+    @FindBy (xpath = "//input[@id='loginFormEmailInput']")
     public WebElement SignInEmail;
 
-@FindBy (xpath = "//*[@id=\"loginFormPasswordInput\"]")
+@FindBy (xpath = "//input[@id='loginFormPasswordInput']")
     public WebElement SignInPassword;
 
-@FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div/h3")
+@FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
     public WebElement EmailAndPasswordDontMatchText;
 
-@FindBy (xpath = "//*[@id=\"loginFormSubmitButton\"]")
+@FindBy (xpath = "//button[@id='loginFormSubmitButton']")
     public WebElement SignInButtonInSignInScreen;
 
 @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[1]")
     public WebElement SignInMenu;
 
-@FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[4]/a")
+@FindBy (xpath = "//button[@id='loginFormSubmitButton']")
 public WebElement SigninMenuFavorites;
 
-    @FindBy (xpath = "//*[@id=\"uitk-tabs-container\"]/div/div[1]/div/div/div/div/div/div/div[1]")
+    @FindBy (xpath = "//span[normalize-space()='All Saved Items']")
     public WebElement AllSavedItems;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[5]/a")
+    @FindBy (xpath = "//div[contains(text(),'Expedia Rewards')]")
     public WebElement SigninMenuExpediaRewards;
 
-    @FindBy (xpath = "//*[@id=\"root\"]/div/div[1]/div[2]/div/div[1]")
+    @FindBy (xpath = "//p[contains(text(),'Collect points on eligible bookings and gain acces')]")
     public WebElement ExpediaRewardsEarn;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[6]/a")
+    @FindBy (xpath = "//div[contains(text(),'Feedback')]")
     public WebElement ExpediaSigninMenuFeedbackButton;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[3]/a")
+    @FindBy (xpath = "//a[@class='uitk-button uitk-button-medium uitk-button-fullWidth uitk-button-has-text uitk-button-tertiary']")
     public WebElement ExpediaSigninMenuSignUp;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[7]/div/p")
+    @FindBy (xpath = "//h1[@class='uitk-heading uitk-heading-3 uitk-flex-item']")
     public WebElement ExpediaSignUpCreateAnAccountConditions;
 
 
@@ -135,31 +137,31 @@ public WebElement SigninMenuFavorites;
     public WebElement ExpediFeedBackExit;
 
 
-    @FindBy (xpath = "//*[@id=\"signupFormEmailInput\"]")
+    @FindBy (xpath = "//input[@id='signupFormEmailInput']")
     public WebElement SignupEmailBox;
 
-    @FindBy (xpath = "//*[@id=\"signupFormFirstNameInput\"]")
+    @FindBy (xpath = "//input[@id='signupFormFirstNameInput']")
     public WebElement SignupFirstNameBox;
 
-    @FindBy (xpath = "//*[@id=\"signupFormLastNameInput\"]")
+    @FindBy (xpath = "//input[@id='signupFormLastNameInput']")
     public WebElement SignupLastNameBox;
 
-    @FindBy (xpath = "//*[@id=\"signupFormPasswordInput\"]")
+    @FindBy (xpath = "//input[@id='signupFormPasswordInput']")
     public WebElement SignupPasswordBox;
 
     @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div")
     public WebElement SignupKeepMeSignInBox;
 
-    @FindBy (xpath = "//*[@id=\"signupFormEmailInput-error\"]")
+    @FindBy (xpath = "//div[@id='signupFormEmailInput-error']")
     public WebElement SignupEmailBoxError;
 
-    @FindBy (xpath = "//*[@id=\"signupFormFirstNameInput-error\"]")
+    @FindBy (xpath = "//div[@id='signupFormFirstNameInput-error']")
     public WebElement SignupFirstNameBoxError;
 
-    @FindBy (xpath = "//*[@id=\"signupFormLastNameInput-error\"]")
+    @FindBy (xpath = "//div[@id='signupFormLastNameInput-error']")
     public WebElement SignupLastNameBoxError;
 
-    @FindBy (xpath = "//*[@id=\"signupFormPasswordInput-error\"]")
+    @FindBy (xpath = "//div[@id='signupFormPasswordInput-error']")
     public WebElement SignupPasswordBoxError;
 
 
