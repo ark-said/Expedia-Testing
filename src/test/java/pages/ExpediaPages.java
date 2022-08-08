@@ -99,20 +99,20 @@ public WebElement OneWayLeavingFromSearchForIstanbul;
     @FindBy (xpath = "//input[@id='loginFormEmailInput']")
     public WebElement SignInEmail;
 
-@FindBy (xpath = "//input[@id='loginFormPasswordInput']")
+    @FindBy (xpath = "//input[@id='loginFormPasswordInput']")
     public WebElement SignInPassword;
 
-@FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
+    @FindBy (xpath = "//h3[@class='uitk-error-summary-heading']")
     public WebElement EmailAndPasswordDontMatchText;
 
-@FindBy (xpath = "//button[@id='loginFormSubmitButton']")
+    @FindBy (xpath = "//button[@id='loginFormSubmitButton']")
     public WebElement SignInButtonInSignInScreen;
 
-@FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[1]")
+    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div[1]/div[1]/header/div/div/div[2]/div/div/div[1]")
     public WebElement SignInMenu;
 
-@FindBy (xpath = "//button[@id='loginFormSubmitButton']")
-public WebElement SigninMenuFavorites;
+    @FindBy (xpath = "//button[@id='loginFormSubmitButton']")
+    public WebElement SigninMenuFavorites;
 
     @FindBy (xpath = "//span[normalize-space()='All Saved Items']")
     public WebElement AllSavedItems;
@@ -135,7 +135,6 @@ public WebElement SigninMenuFavorites;
 
     @FindBy (xpath = "//*[@id=\"headerFeedback\"]/div[5]/button/span[1]")
     public WebElement ExpediFeedBackExit;
-
 
     @FindBy (xpath = "//input[@id='signupFormEmailInput']")
     public WebElement SignupEmailBox;
@@ -164,90 +163,78 @@ public WebElement SigninMenuFavorites;
     @FindBy (xpath = "//div[@id='signupFormPasswordInput-error']")
     public WebElement SignupPasswordBoxError;
 
-
-
-    @FindBy (xpath = "//*[@id=\"signupFormEmailInput-error\"]")
+    @FindBy (xpath = "//div[@id='signupFormEmailInput-error']")
     public WebElement SignupInvalidEmailError;
 
-
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div[1]/div[1]")
+    @FindBy (xpath = "//div[@class='uitk-flex-item uitk-flex-grow-1 uitk-progress-bar-title']")
     public WebElement SignupPasswordStrength;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div[1]/div[2]")
+    @FindBy (xpath = "//div[@class='uitk-flex-item uitk-type-right uitk-progress-bar-description uitk-type-bold']]")
     public WebElement SignupPasswordWeak;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[1]")
+    @FindBy (xpath = "//li[normalize-space()='Includes 8-64 characters']")
     public WebElement SignupPasswordWarningLessThanEight;
 
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[2]")
+    @FindBy (xpath = "//li[normalize-space()='Uses at least one symbol (~ ! @ # $ % ^ & * - _ ?)']")
     public WebElement SignupPasswordWarningSymbol;
 
-    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/ul/li[3]")
+    @FindBy(xpath = "//li[normalize-space()='Combines letters and numbers']")
     public WebElement SignupPasswordWarningCombine;
 
 
-    @FindBy(xpath = "//*[ text() = ‘Strong’ ]")
+    @FindBy(xpath = "//div[@class='uitk-flex-item uitk-type-right uitk-progress-bar-description uitk-type-bold']")
     public WebElement SignupPasswordStrong;
 
-    @FindBy(xpath = "//*[ text() = ‘Very Strong’ ]")
+    @FindBy(xpath = "//div[@class='uitk-flex-item uitk-type-right uitk-progress-bar-description uitk-type-bold']")
     public WebElement SignupPasswordVeryStrong;
 
-    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[1]")
+    @FindBy(xpath = "//a[normalize-space()='Terms and Conditions']")
     public WebElement SignupPageTermsAndConditions;
 
-    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[2]")
+    @FindBy(xpath = "//a[normalize-space()='Privacy Statement']")
     public WebElement SignupPagePrivacy;
 
-    @FindBy(xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[9]/div/p/a[3]")
+    @FindBy(xpath = "//a[normalize-space()='Expedia Rewards Terms and Conditions']")
     public WebElement SignupPageRewardTermsAndConditions;
 
-    @FindBy(xpath = "//*[@id=\"editorial-1\"]/div/div/div/div/div/div/div/h5[1]")
+    @FindBy(xpath = "//h5[@class='bold']")
     public WebElement WebsiteTermsConfirmObject;
 
-    @FindBy(xpath = "//*[@id=\"editorial-1\"]/div/div/div/div/div/div/div/h2[1]")
+    @FindBy(xpath = "//section[@id='editorial-1']//div[@class='flex-app-content']//h2[1]")
     public WebElement PrivacyPageConfirmObject;
 
-    @FindBy(xpath = "//*[@id=\"60668133\"]/div/h1")
+    @FindBy(xpath = "//h1[@class='uitk-heading-4']")
     public WebElement RewardsTermsAndConditionsConfirmObject;
 
-    @FindBy (xpath = "//*[@id=\"social-auth-provider-apple-web\"]/img")
+    @FindBy (xpath = "//img[@src='https://a.travel-assets.com/egds/marks/apple.svg']")
     public WebElement SignupPageAppleLogin;
 
-    @FindBy (xpath = "//*[@id=\"social-auth-provider-facebook-web\"]/img")
+    @FindBy (xpath = "//img[@src='https://a.travel-assets.com/egds/marks/facebook.svg']")
     public WebElement SignupPageFacebookLogin;
 
-    @FindBy (xpath = "//*[@id=\"social-auth-provider-google-web\"]/img")
+    @FindBy (xpath = "//img[@src='https://a.travel-assets.com/egds/marks/google.svg']")
     public WebElement SignupPageGoogleLogin;
 
-    @FindBy (xpath = "//h1[text()=’Use your Apple ID to sign in to Expedia.]")
+    @FindBy (xpath = "//div[@class='label-small text-centered centered tk-caption privacy-wrapper']")
     public WebElement SignupPageAppleLoginConfirm;
 
-
-
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[2]/div[5]/div/div/label")
+    @FindBy (xpath = "//input[@id='signUpFormRememberMeCheck']")
     public WebElement SignupPageKeepMeSignedIn;
 
-
-    @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
+    @FindBy (xpath = "//div[@class='uitk-text uitk-type-200 uitk-text-default-theme']")
     public WebElement SignupPageKeepMeSignedInText;
 
-
-    @FindBy (xpath = "//*[@id=\"signinRedirectLink\"]")
+    @FindBy (xpath = "//a[@id='signinRedirectLink']")
     public WebElement SignupPageSignInButton;
 
-
-
-    @FindBy (xpath = "//*[@id=\"app-layer-base\"]/div/main/form/div[1]/h1")
+    @FindBy (xpath = "//h1[@class='uitk-heading uitk-heading-3 uitk-flex-item']")
     public WebElement SignupPageSignInRedirectConfirmation;
 
-
-
-    @FindBy (xpath = "//*[@id=\"loginFormRememberMeCheck\"]")
+    @FindBy (xpath = "//input[@id='loginFormRememberMeCheck']")
     public WebElement SigninPageKeepSignedInButton;
 
-    @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
+    @FindBy (xpath = "//div[@class='uitk-text uitk-type-200 uitk-text-default-theme']")
     public WebElement SigninPageKeepSignedInButtonText;
 
-    @FindBy (xpath = "//*[@id=\"keepMeSignedInLabel\"]/div")
-    public WebElement SigninPageKeepSignedInButtonText11;
+
 }
