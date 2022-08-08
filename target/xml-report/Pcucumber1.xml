@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.276">
-    <testcase classname="US1009 Expedia Multi Way Trip Half Empty Destination Error Check" name="Check if it gives an error message when the info boxes are half empty" time="10.037">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="26.056">
+    <testcase classname="US1025 Signup Apple Login" name="Check if you can access to reward Terms and conditions page from Sign Up page" time="19.346">
         <system-out>
-            <![CDATA[Given The user opens the Expedia website....................................passed
-And The user sees Expedia's home page is visible............................passed
-And The user clicks on the flights..........................................passed
-And The user clicks on the Multi-city.......................................passed
-Then The user confirms that there is a Add Another Flight button............passed
-And The user clicks on the Multiway leaving from............................passed
-And The user adds a leaving flight for MultiWay.............................passed
-And The user clicks on the Search button....................................passed
-Then The user checks if the error message is displayed for the multi way trip when it is half empty.passed
+            <![CDATA[Given The user opens the Expedia signup page................................passed
+And The user clicks on the Apple logo.......................................passed
+And The user confirms apple login page is available.........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1026 Signup Facebook Login" name="Check if the user can access to Google Login page from the Sign Up page" time="3">
+        <system-out>
+            <![CDATA[Given The user opens the Expedia signup page................................passed
+And The user clicks on the Facebook logo....................................passed
+And The user confirms Facebook login page is available......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1027 Signup Google Login" name="Check if the user can access to Google Login page from the Sign Up page" time="3.439">
+        <system-out>
+            <![CDATA[Given The user opens the Expedia signup page................................passed
+And The user clicks on the Google logo......................................passed
+And The user confirms Google login page is available........................passed
 ]]>
         </system-out>
     </testcase>
