@@ -1,4 +1,4 @@
-Feature: US1011 Expedia Sign In Menu Avability
+Feature: US1011 Expedia Sign In Menu Favorites Availability
 
   @SigninMenuListofFavoritesButton
   Scenario: Check if it the favorites button in the sign in menu works

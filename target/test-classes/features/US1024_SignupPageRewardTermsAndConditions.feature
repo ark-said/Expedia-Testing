@@ -1,4 +1,4 @@
-Feature: US1021 Signup Privacy Page
+Feature: US1024 Reward Terms and Conditions
 
   @ExpediaSignUpRewardTermsAndConditions
   Scenario: Check if you can access to reward Terms and conditions page from Sign Up page

@@ -169,7 +169,7 @@ public WebElement OneWayLeavingFromSearchForIstanbul;
     @FindBy (xpath = "//div[@class='uitk-flex-item uitk-flex-grow-1 uitk-progress-bar-title']")
     public WebElement SignupPasswordStrength;
 
-    @FindBy (xpath = "//div[@class='uitk-flex-item uitk-type-right uitk-progress-bar-description uitk-type-bold']]")
+    @FindBy (xpath = "//div[@class='uitk-flex-item uitk-type-right uitk-progress-bar-description uitk-type-bold']")
     public WebElement SignupPasswordWeak;
 
     @FindBy (xpath = "//li[normalize-space()='Includes 8-64 characters']")

@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="26.056">
-    <testcase classname="US1025 Signup Apple Login" name="Check if you can access to reward Terms and conditions page from Sign Up page" time="19.346">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.737">
+    <testcase classname="US1021 Signup Page Password Strength Level Check" name="Check if you can see correct strength level of the password" time="21.524">
         <system-out>
             <![CDATA[Given The user opens the Expedia signup page................................passed
-And The user clicks on the Apple logo.......................................passed
-And The user confirms apple login page is available.........................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1026 Signup Facebook Login" name="Check if the user can access to Google Login page from the Sign Up page" time="3">
-        <system-out>
-            <![CDATA[Given The user opens the Expedia signup page................................passed
-And The user clicks on the Facebook logo....................................passed
-And The user confirms Facebook login page is available......................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1027 Signup Google Login" name="Check if the user can access to Google Login page from the Sign Up page" time="3.439">
-        <system-out>
-            <![CDATA[Given The user opens the Expedia signup page................................passed
-And The user clicks on the Google logo......................................passed
-And The user confirms Google login page is available........................passed
+And The user will enter an eight-character password that meets all requirements, but will still be considered Weak.passed
+And The user will enter an nine-character password that meets all requirements, it will be considered Strong.passed
+And The user will enter an eleven-character password that meets all requirements and last two characters must different three before the last one then it will be considered Very Strong.passed
 ]]>
         </system-out>
     </testcase>

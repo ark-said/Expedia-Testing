@@ -1,4 +1,4 @@
-Feature: US1021 Signup Page Terms And Conditions
+Feature: US1022 Signup Page Terms And Conditions
 
   @ExpediaSignupPageTermsAndConditions
   Scenario: Check if you can access to Terms and Conditions page from Sign Up page

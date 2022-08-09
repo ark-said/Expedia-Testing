@@ -1,8 +1,8 @@
-Feature: US1004 Expedia Round Trip Half Empty Destination Error Check
+Feature: US1007 Expedia Round Trip Half Empty Destination Error Check
 
   @HalfEmptyDestination
   @RoundTripHalfEmptyDestination
-  Scenario: Check if it gives an error message when the info boxes are half empty
+  Scenario: Check if it gives an error message when the flight destination boxes are half empty
     Given The user opens the Expedia website
     And The user sees Expedia's home page is visible
     And The user clicks on the flights

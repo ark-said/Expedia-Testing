@@ -2,7 +2,7 @@ Feature: US1005 Expedia One Way Trip Half Empty Destination Error Check
 
   @HalfEmptyDestination
   @OneWayTripHalfEmptyDestination
-  Scenario: Check if it gives an error message when the info boxes are half empty
+  Scenario: Check if it gives an error message when the flight destination boxes are half empty
     Given The user opens the Expedia website
     And The user sees Expedia's home page is visible
     And The user clicks on the flights

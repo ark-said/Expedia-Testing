@@ -1,4 +1,4 @@
-Feature: US1010 Expedia Sign In Menu Avability
+Feature: US1010 Expedia Sign In Menu Availability
 
 @SignInWrongMenuAvailability
 Scenario: Check if it the user can access the sign-in menu
