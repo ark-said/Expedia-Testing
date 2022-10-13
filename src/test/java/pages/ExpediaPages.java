@@ -236,10 +236,4 @@ public WebElement OneWayLeavingFromSearchForIstanbul;
     @FindBy (xpath = "//div[@class='uitk-text uitk-type-200 uitk-text-default-theme']")
     public WebElement SigninPageKeepSignedInButtonText;
 
-
-
-
-
-
-
 }
